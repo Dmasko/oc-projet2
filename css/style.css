@@ -246,7 +246,7 @@ form button:hover
 
 .card-hebergement div
 {
-    flex-basis: auto;
+    flex-basis: 250px;
     min-width: 220px;
 }
 
@@ -257,6 +257,8 @@ form button:hover
     padding: 5px;
     flex-grow: 1;
     margin: 0 10px 10px 10px;
+    box-shadow: 0 0 8px var(black);
+
 }
 
 .card-main img {
@@ -295,6 +297,15 @@ form button:hover
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    box-shadow: 0 0 8px var(black);
+
+}
+
+.card:hover
+{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px var(--main-color);
+    cursor: pointer;
 }
 
 .populaires-cards img {
@@ -337,34 +348,42 @@ form button:hover
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 80px;
     min-height: 439px;
+    justify-content: space-between;
 }
 
-.largeur
-{
-    max-width: 307px;
-    min-width: 200px;
-}
-
-.param-card-activuty
+.card-activites
 {
     display: flex;
     flex-direction: column;
     flex-basis: 19%;
     border-radius: 16px;
     box-shadow: 0 0 8px var(--filter-bg-color);
+    max-width: 307px;
+    min-width: 200px;
+    justify-content: space-between;
 }
 
-.card-100 img
+.card-activites img
 {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+    height: 90%;
 }
 
-.card-100 img {
-    height: 90%;
+.card-activites:hover
+{
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--main-color);
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    height: 60px;
+    margin-left: 20px;
 }
 
 
