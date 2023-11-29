@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root 
@@ -12,9 +13,17 @@
 
 body 
 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.bloc
+{
     width: 100%;
-    margin: auto;
     max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 main
@@ -324,7 +333,7 @@ nav ul li
 }
 
 .card-main p, .card-main h4 {
-    margin: 5px
+    /* margin: 5px */
 }
 .card-main:hover {
     transform: scale(1.02);
@@ -408,9 +417,10 @@ nav ul li
   {
     width: 33%;
     height: 134px;
-    border: 5px solid white;
-    box-sizing: border-box;  border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;  
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   
   .populaires-cards .card-content 
@@ -595,7 +605,10 @@ footer
 {
     padding: 0;
 }
-
+#hebergements 
+{
+    background-color: white;
+}
 header 
 {
     display: flex;
