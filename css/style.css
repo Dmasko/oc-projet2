@@ -518,6 +518,9 @@ footer a
 }
 footer h4 {
     margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    
 }
 footer p {
     margin: 0;
